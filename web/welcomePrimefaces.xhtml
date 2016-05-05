@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <link rel="stylesheet" type="text/css" href="css/estilo.css">
+                <meta charset="utf-8">
+                <script type="text/javascript" language="javascript" src="js/jquery-1.11.1.min.js"></script>
+                <script type="text/javascript" language="javascript" src="js/jquery.cycle.all.js"></script>
+                <script type="text/javascript" language="javascript" src="js/script.js"></script>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+            <h:panelGroup class="pagina" layout="block">
+                <h:panelGroup class="cabecalho" layout="block">
+                    <img class="imagemcabecalho" src="http://www.cidades.mt.gov.br/mt-secid-final-theme/images/logos/logo_gestao_mt.png"> 
+                </h:panelGroup>
+                <h:panelGroup class="linha" layout="block">
+                    <h:panelGroup id="data"> 
+                        <h:form>
+                            <h3 style="margin-top:0">Client</h3>
+                            <p:clock />
+
+                            <h3>Server</h3>
+                            <p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server" />
+                        </h:form>
+                    </h:panelGroup>    
+
+
+                </h:panelGroup>
+                <h:panelGroup class="corpo" layout="block">
+                    <h:panelGroup class="principal" layout="block">
+                        <h:panelGroup class="titulo" ><h2>&nbsp &nbsp &nbsp Serviços ao consumidor</h2> </h:panelGroup>
+
+                        <h:panelGroup id="galeria" class="submenu" layout="block">
+                            <h:panelGroup id="servico" layout="block">
+
+                                <h:panelGroup  layout="block">
+                                    <center>
+                                        <h:panelGroup style="color: #405A67" >Sites não recomendados</span>
+                                    </center>
+                                </h:panelGroup>
+                            </h:panelGroup>
+                            <h:panelGroup id="servico" layout="block">
+                                <a  href="formulario.php">
+                                    <img id="imagem" width="152px" height="102px" src="http://camilocoutinho.com.br/wp-content/uploads/2013/01/reclame-aqui-770x397.jpg">
+                                </a>
+                                <h:panelGroup  layout="block">
+                                    <center>
+                                        <h:panelGroup style="color: #405A67" >Faça sua reclamação</span>
+                                    </center>
+                                </h:panelGroup>
+                            </h:panelGroup>
+                            <h:panelGroup id="servico" layout="block">
+                                <a href="http://www.memesdanet.com.br">
+                                    <img id="imagem"width="152px" height="102px" src="http://cidadesergipe.com.br/wp-content/uploads/2013/10/escrevendo-caneta-papel-carta-caderno.jpg">
+                                </a>
+                                <h:panelGroup  layout="block"> </h:panelGroup>
+                                <center>
+                                    <h:panelGroup style="color: #405A67"><span >Registre uma ocorrência </h:panelGroup>
+                                </center>
+                            </h:panelGroup>
+                        </h:panelGroup>
+                    </h:panelGroup> 
+                    <h:panelGroup class="conteudo" layout="block">
+                        <h:panelGroup id="slider" layout="block">
+                            <a href="http://www.odocumento.com.br/materia.php?id=454741" target="_blank">
+                                <img src="http://img.cenariomt.com.br/360148/g/1.jpg" width="600px" height="240px">
+                            </a>
+                            <a href="http://www.cenariomt.com.br/noticia/362022/consumidores-e-procon-questionam-tarifa-elevada-da-energia-eletrica.html">
+                                <img src="http://img.cenariomt.com.br/362022/g/1.jpg"width="600px" height="240px"> 
+                            </a>
+                            <a href="http://www.cenariomt.com.br/noticia/356815/cansados-de-esperar-compradores-tomam-posse-na-marra-de-imoveis.html">    
+                                <img src="http://img.cenariomt.com.br/356815/g/1.jpg"width="600px" height="240px">
+                            </a>    
+                        </h:panelGroup>   
+                    </h:panelGroup>     
+                </h:panelGroup>    
+
+                <h:panelGroup class="menu" layout="block">
+                    <h:panelGroup class="titulo" layout="block"><center ><h3>Menu Principal</h3></center> </h:panelGroup>
+                    <a href="index.php">Página inicial</a>
+                    <a href="pagina2.php">Galeria de Imagens</a>
+                    <a href="pagina3.php">Informações</a>
+                    <a href="http://www.receita.fazenda.gov.br/pessoajuridica/cnpj/cnpjreva/cnpjreva_solicitacao.asp">Pesquisar CNPJ</a>
+                    <a href="http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/consultapublica.asp">Pesquisar por CPF</a>
+                    <h:panelGroup class="cor" layout="block">
+                        <?php if(empty( $_SESSION['login'])){?>
+                        <form id="form-envio" action="valida.php" method="post" >
+                            <label >Acesso ao cadastro</label>
+                            <input type="text" name="login" placeholder="Login"></br>
+                            <input type="password" name="senha" placeholder="Senha"></br>
+                            <input type="submit" value="Enviar">
+                        </form><?php }else{?>
+                        <a href="funcoes.php">Mostrar cadastro</a>
+                        <?php } ?>
+                    </h:panelGroup>      
+                </h:panelGroup>
+
+            </h:panelGroup>
+            <h:panelGroup class="rodape" layout="block">
+                <h:panelGroup ><center><br>Copyright © 2014 - Todos os direitos reservados - Superintendência de Defesa do Consumidor</center> </h:panelGroup>
+            </h:panelGroup> 
+            </h:panelGroup>
+        </h:body>
+
+    </f:view>
+</html>
+

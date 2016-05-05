@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <link rel="stylesheet" type="text/css" href="estilo.css"/>
+                <meta charset="utf-8"/>
+                <script type="text/javascript" language="javascript" src="jquery-1.11.1.min.js"></script>
+                <script type="text/javascript" language="javascript" src="jquery.cycle.all.js"></script>
+                <script type="text/javascript" language="javascript" src="script.js"></script>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+        <h:body>
+            <h:panelGroup class="ajuste" layout="block">
+                <h:panelGroup class="pagina" layout="block">
+                    <h:panelGroup class="cabecalho" layout="block">
+                        <h:graphicImage url="http://www.cidades.mt.gov.br/mt-secid-final-theme/images/logos/logo_gestao_mt.png"/>
+                    </h:panelGroup>  
+                    <h:panelGroup class="menuForm" layout="block">
+                        
+                        <h:form>
+                            <p:growl id="messages" showDetail="true"/>
+
+                            <p:menuButton value="Menu Principal">
+                                <p:menuitem value="Página Inicial" outcome="index" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Galeria" outcome="galeria" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Formulário" url="http://localhost:8080/trabalho/form2.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Consoles" url="http://localhost:8080/trabalho/consoles.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Jogos" url="http://localhost:8080/trabalho/jogos.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Informações" outcome="informacoes" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Pesquisar CNPJ" url="http://www.receita.fazenda.gov.br/pessoajuridica/cnpj/cnpjreva/cnpjreva_solicitacao.asp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Pesquisar CNPJ" url="http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/consultapublica.asp" icon="ui-icon-extlink"/>
+                            </p:menuButton>
+                        </h:form>
+                    </h:panelGroup> 
+                    <h:panelGroup class="exibir" layout="block">
+                        <h:panelGroup id="galeria2" layout="block">
+                            <h:graphicImage url="http://www.olhardireto.com.br/imgsite/noticias/Procon-Cuiaba.jpg"/>
+                            <h:graphicImage url="http://www.cuiaba.mt.gov.br/upload/arquivo/procon2.png"/>
+                            <h:graphicImage url="http://www.24horasnews.com.br/files/imagens_noticias/procon-estadual-realiza-fiscalizacao-preventiva-em-municipios-do-interior-de-mato-grosso.jpg"/>
+                            <h:graphicImage url="http://www.cuiaba.mt.gov.br/storage/webdisco/2014/02/18/800x600/ac5521410527c2b416d7a9518679d10f.jpg"/>
+                            <h:graphicImage url="http://www.radioprogresso640.com.br/wp-content/uploads/2013/02/Procon-de-Alta-Floresta.jpg"/>
+                            <h:graphicImage url="http://img.cenariomt.com.br/360148/g/1.jpg"/>
+                            <h:graphicImage url="http://newsite.24horasnews.com.br/gd.php?src=files/imagens_noticias/tac-preve-criacao-e-estruturacao-de-unidade-do-procon-em-sao-jose-dos-quatro-marcos.jpg"/>
+                            <h:graphicImage url="http://img.cenariomt.com.br/357605/g/1.jpg"/>
+                        </h:panelGroup> 
+                    </h:panelGroup>     
+
+                </h:panelGroup> 
+            </h:panelGroup> 
+            <h:panelGroup class="rodape" layout="block">
+                <h:panelGroup> <center><br/>Copyright © 2014 - Todos os direitos reservados - Superintendência de Defesa do Consumidor</center></h:panelGroup> 
+            </h:panelGroup> 
+        </h:body>
+    </f:view>
+</html>

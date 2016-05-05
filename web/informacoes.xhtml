@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <link rel="stylesheet" type="text/css" href="estilo.css"/>
+                <meta charset="utf-8"/>
+                <script type="text/javascript" language="javascript" src="jquery-1.11.1.min.js"></script>
+                <script type="text/javascript" language="javascript" src="jquery.cycle.all.js"></script>
+                <script type="text/javascript" language="javascript" src="script.js"></script>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+        <h:body>
+            <h:panelGroup class="pagina" layout="block">
+                <h:panelGroup class="cabecalho" layout="block">
+                    <h:graphicImage url="http://www.cidades.mt.gov.br/mt-secid-final-theme/images/logos/logo_gestao_mt.png"/> 
+                </h:panelGroup>  
+                <h:panelGroup class="menuForm" layout="block">
+
+                    <h:form>
+                        <p:growl id="messages" showDetail="true"/>
+
+                        <p:menuButton value="Menu Principal">
+                                <p:menuitem value="Página Inicial" outcome="index" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Galeria" outcome="galeria" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Formulário" url="http://localhost:8080/trabalho/form2.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Consoles" url="http://localhost:8080/trabalho/consoles.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Jogos" url="http://localhost:8080/trabalho/jogos.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Informações" outcome="informacoes" icon="ui-icon-extlink"/>
+                                <p:menuitem value="TimeLine Consoles" url="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1TCXI28375oqHE3asXbzSby_6XHJEzg7RuCXvlszzqg0" icon="ui-icon-extlink"/>
+                            </p:menuButton>
+                    </h:form>
+                </h:panelGroup> 
+                <h:panelGroup  layout="block">
+                    <h:panelGroup class="exibir" layout="block"> 
+                        <h:panelGroup id="texto" layout="block">
+                            Console de videogame (português brasileiro) ou consola de jogos (português europeu) (também chamado no Brasil simplesmente de videogame ou console, e em Portugal de consola) é um microcomputador dedicado a executar jogos de vídeo (videogames) de diversas naturezas ou, como são conhecidos, diversos gêneros, como jogos de tiro, jogos de ação, música e outros. A consola executa um jogo de cada vez, mas que pode ser facilmente intercambiado de acordo com o desejo do usuário.
+
+Dentre os apreciadores de videogames na amecs de ambos os sexos e todas as faixas etárias, de crianças a adultos.
+
+Vasta é a biblioteca de títulos e estilos de jogos a disposição dos jogadores, e podem estar gravados em disco de leitura óptica (CD's, DVD's, BD's ou mídia especializada, como no caso do PSP e GameCube), no próprio disco rígido da consola, em cartões de memória ou em cartuchos. Em tais jogos, é possível interagir através de comandos dados por meio de um controle (ou comando), usualmente chamado de joystick. Atualmente também é possível controlar um jogo através de comandos de voz e por gestos, assim como funções básicas do console, como selecionar um jogo da biblioteca, administrar o conteúdo de seu disco rígido, ajustar data e hora, etc. As informações dos jogos são processadas no interior do aparelho e disponibilizadas aos jogadores através de uma interface gráfica e sonora, apresentada em algum dispositivo de áudio e vídeo (televisão, monitor de vídeo, fones de ouvido, etc. por imagens e animação, fala, efeitos sonoros e música) e muitas vezes tátil, através de vibração do controle ou do fone de ouvido.
+                        </h:panelGroup>
+                    </h:panelGroup>    
+
+                </h:panelGroup>
+                <h:panelGroup class="menuForm" layout="block"> 
+
+                </h:panelGroup>   
+                <h:panelGroup class="rodape" layout="block">
+                    <h:panelGroup  ><center><br/>Copyright © 2014 - Todos os direitos reservados - Superintendência de Defesa do Consumidor</center></h:panelGroup>
+                </h:panelGroup> 
+            </h:panelGroup>
+        </h:body>
+    </f:view>
+</html>

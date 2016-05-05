@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <link rel="stylesheet" type="text/css" href="estilo.css"/>
+                <meta charset="utf-8"/>
+                <script type="text/javascript" language="javascript" src="jquery-1.11.1.min.js"></script>
+                <script type="text/javascript" language="javascript" src="jquery.cycle.all.js"></script>
+                <script type="text/javascript" language="javascript" src="script.js"></script>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body onload="slide1()">
+            <h:panelGroup class="pagina" layout="block">
+                <h:panelGroup class="cabecalho" layout="block">
+                    
+                </h:panelGroup>
+                <h:panelGroup class="linha" layout="block">
+                    <h:panelGroup id="data"> 
+                        <h:form>
+                            <p:clock pattern="HH:mm:ss dd/MM/yyyy" mode="client" />        
+                        </h:form>
+                    </h:panelGroup>    
+
+
+                </h:panelGroup>
+                <h:panelGroup class="corpo" layout="block">
+                    <h:panelGroup class="principal" layout="block">
+                        <h:panelGroup class="titulo" ></h:panelGroup>
+
+                        <h:panelGroup id="galeria" class="submenu" layout="block">
+                            <h:panelGroup class="servico" layout="block">
+                                <a  href="https://pt.wikipedia.org/wiki/Nintendo_3DS_XLc">
+                                    <img class="imagem" width="152px" height="102px" src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/Nintendo-3DS-AquaOpen_zpsqdvmtawo.png"/>
+                                </a>
+                                <h:panelGroup  layout="block">
+                                    <center>
+                                        <h:panelGroup style="color: #405A67" >Nintendo 3DS XL </h:panelGroup>
+                                    </center>
+                                </h:panelGroup>
+                            </h:panelGroup>
+                            <h:panelGroup class="servico" layout="block">
+                                <a  href="https://pt.wikipedia.org/wiki/N-Gage">
+                                    <img class="imagem" width="152px" height="102px" src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/Nokia-NGage-QD_zpst8is0i73.png"/>
+                                </a>
+                                <h:panelGroup  layout="block">
+                                    <center>
+                                        <h:panelGroup style="color: #405A67" >Nokia N-Gage </h:panelGroup>
+                                    </center>
+                                </h:panelGroup>
+                            </h:panelGroup>
+                            <h:panelGroup class="servico" layout="block">
+                                <a href="https://pt.wikipedia.org/wiki/PSP_Go!">
+                                    <img class="imagem" width="152px" height="102px" src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/pspgo_zpsnfuqxlyr.png"/>
+                                </a>
+                                <h:panelGroup  layout="block"> </h:panelGroup>
+                                <center>
+                                    <h:panelGroup style="color: #405A67">Sony PSP Go </h:panelGroup>
+                                </center>
+                            </h:panelGroup>
+                        </h:panelGroup>
+                        <h:panelGroup  class="conteudo" layout="block">
+                            <h:panelGroup id="slideShowImages" layout="block">
+                                <img  src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/tiger_zpsz9weluj1.jpg" width="100%" heidth="100%" alt="Slide 1" />
+                                <img src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/AlteredBeast_zpsfkaijhc0.jpg" width="100%" heidth="100%" alt="Slide 2" />
+                                <img src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/sonic-cd-usa_zpsx45hzmr2.png" width="100%" heidth="100%" alt="Slide 3" />    
+                                <img src="http://i907.photobucket.com/albums/ac280/powerguidissimo1/cava_zpsifj832mc.jpg" width="100%" heidth="100%" alt="Slide 4" />
+
+                            </h:panelGroup>   
+                        </h:panelGroup> 
+                    </h:panelGroup> 
+
+                    <h:panelGroup class="menu" layout="block">
+
+                        <h:form>
+                            <p:growl id="messages" showDetail="true"/>
+
+                            <p:menuButton value="Menu Principal">
+                                <p:menuitem value="Página Inicial" outcome="index" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Galeria" outcome="galeria" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Formulário" url="http://localhost:8080/trabalho/form2.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Consoles" url="http://localhost:8080/trabalho/consoles.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Jogos" url="http://localhost:8080/trabalho/jogos.jsp" icon="ui-icon-extlink"/>
+                                <p:menuitem value="Informações" outcome="informacoes" icon="ui-icon-extlink"/>
+                                <p:menuitem value="TimeLine Consoles" url="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1TCXI28375oqHE3asXbzSby_6XHJEzg7RuCXvlszzqg0" icon="ui-icon-extlink"/>
+                                
+                            </p:menuButton>
+                        </h:form>
+
+
+         
+                    </h:panelGroup>
+                </h:panelGroup>    
+
+
+
+            </h:panelGroup>
+            <h:panelGroup class="rodape" layout="block">
+                <h:panelGroup ><center><br/>Copyright © 2014 - Todos os direitos reservados - Superintendência de Defesa do Consumidor</center> </h:panelGroup>
+            </h:panelGroup> 
+
+        </h:body>
+
+    </f:view>
+</html>
+
